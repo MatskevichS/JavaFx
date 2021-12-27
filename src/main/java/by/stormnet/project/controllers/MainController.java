@@ -79,7 +79,7 @@ public class MainController {
     @FXML
     protected void onWriteTextButtonClick() {
         Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.setTitle("Info");
+        alert.setTitle("Warning");
         alert.setHeaderText(textField.getText());
         Optional<ButtonType> buttonType = alert.showAndWait();
         textField.setText(buttonType.get().getText());
