@@ -62,11 +62,8 @@ public class MainController {
     @FXML
     private void initialize() {
         comboBox.setValue("Java SE");
-    }
-
-    @FXML
-    private void stop() {
-
+        comboBox.setValue("Java EE");
+        comboBox.setValue("Java ME");
     }
 
     @FXML
@@ -94,10 +91,6 @@ public class MainController {
         alert.setTitle("Info");
         alert.setHeaderText(comboBox.getValue());
         alert.showAndWait();
-//        service.readTypeFromFile();
-//        List<String> comboBoxList = new ArrayList<>();
-//        ObservableList<String> list = FXCollections.observableArrayList(comboBoxList);
-//        comboBox.setItems(list);
     }
 
     @FXML
